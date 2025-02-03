@@ -25,14 +25,14 @@ The computational power needed to run the MATLAB script should be well within th
 MATLAB can be installed on machines running Windows, macOS or Linux. MATLAB software requires a paid subscription to be used. More details [here](https://uk.mathworks.com/products/matlab.html).
 
 ------------------
-## Folder Structure
-The following folders are included in this repository:
+## Files
+The following files are included in this repository:
 
 **FCV**: Analysis of Fast-scan Cyclic Voltammetry (FCV) outputs.
 
 **Patch-Clamp**: Plot electrophysiology traces from patch-clamp experiments. 
 
-**Maths_Model**: All original phyton code used for mathemical predictions of geometrically expected mean minimum distances between ChIs or SPNs and their nearest astrocyte.
+**Maths_Model**: All original MATLAB code used for mathemical predictions of geometrically expected mean minimum distances between ChIs or SPNs and their nearest astrocyte.
 
 **GRAB_imaging**: Measure fluorescence changes in GRAB sensor images. 
 
@@ -92,6 +92,7 @@ Type: Script or function files.
 Usage: Contain MATLAB code, which can include functions, scripts, or class definitions.
 Execution: Can be run directly in the MATLAB environment. When executed, the code within the file is interpreted and run line by line.
 Example: A file named myFunction.m might contain a function definition that performs calculations or manipulates data.
+
 .mat Files
 
 Type: Data files.
