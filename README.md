@@ -48,6 +48,7 @@ Zhang, (2024) - Rapid modulation of striatal cholinergic interneurons and dopami
 ## Acknowledgements
 This research was funded in part by Aligning Science Across Parkinson’s [ASAP-020370] through the Michael J. Fox Foundation for Parkinson’s Research (MJFF).
 
+Text from Yan-Feng
 
 **Key Features:**
 
@@ -63,7 +64,7 @@ This research was funded in part by Aligning Science Across Parkinson’s [ASAP-
     * Defines a function to map ChI firing rate to inhibition efficiency.
 * **Calculates ChI-Dependent Depression:** 
     * Calculates the level of depression in both DLS and NAcc based on ChI inhibition and desensitization.
-* **Calculates Effective Dopamine Firing:** 
+* **Calculates Effective Dopamine Firing:**
     * Determines the effective dopamine firing rate in DLS and NAcc, accounting for inhibition and desensitization.
 
 **Usage:**
@@ -85,5 +86,15 @@ This research was funded in part by Aligning Science Across Parkinson’s [ASAP-
 
 This script provides a framework for understanding the interplay between ChI inhibition, desensitization, and dopamine release. It can be further expanded and refined to incorporate additional biological details and explore more complex scenarios.
 
-**Author:Yanfeng Zhang
-**Date:08/01/2025
+.m Files
+
+Type: Script or function files.
+Usage: Contain MATLAB code, which can include functions, scripts, or class definitions.
+Execution: Can be run directly in the MATLAB environment. When executed, the code within the file is interpreted and run line by line.
+Example: A file named myFunction.m might contain a function definition that performs calculations or manipulates data.
+.mat Files
+
+Type: Data files.
+Usage: Used to store variables, arrays, and other data structures in a binary format. They allow for efficient saving and loading of MATLAB workspace variables.
+Execution: Cannot be executed as code; instead, they are loaded into the MATLAB workspace using the load function.
+Example: A file named data.mat might store variables such as matrices or structures that can be loaded into a session for further analysis.
