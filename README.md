@@ -1,6 +1,53 @@
-%% Readme File: Dopamine Release Calculation with ChI Inhibition and Desensitization
+# Supplemental code for "An axonal brake on striatal dopamine output by cholinergic interneurons"
 
-This MATLAB script simulates dopamine release in a neural circuit, considering the effects of ChI inhibition and desensitization. 
+------------------
+## Contents
+* [Project Overview](#project-overview)
+* [Folder Structure](#folder-structure)
+* [License and citation](#license-and-citation)
+* [Acknowledgements](#acknowledgements)
+
+------------------
+## Project Overview
+This repository contains MATLAB scripts that run a computational simulation of dopamine (DA) release in a neural circuit, considering the effects of cholinergic interneurons (Chl) inhibition and desensitization. These scripts were custom-written by Yan-Feng Zhang and used in the study ["An axonal brake on striatal dopamine output by cholinergic interneurons"](https://www.biorxiv.org/content/10.1101/2024.05.15.594341v1).
+
+------------------
+## System Requirements
+Any computer using an operating system capable of running MATLAB.
+
+**Hardware Requirements**
+The computational power needed to run the MATLAB script should be well within the capacities of mid-range laptop computers, with, for example:
+
+    * 8gb of RAM 
+    * processor with 4 cores of 4.00+GHz 
+
+**Software Requirements**
+MATLAB can be installed on machines running Windows, macOS or Linux. MATLAB software requires a paid subscription to be used. More details [here](https://uk.mathworks.com/products/matlab.html).
+
+------------------
+## Folder Structure
+The following folders are included in this repository:
+
+**FCV**: Analysis of Fast-scan Cyclic Voltammetry (FCV) outputs.
+
+**Patch-Clamp**: Plot electrophysiology traces from patch-clamp experiments. 
+
+**Maths_Model**: All original phyton code used for mathemical predictions of geometrically expected mean minimum distances between ChIs or SPNs and their nearest astrocyte.
+
+**GRAB_imaging**: Measure fluorescence changes in GRAB sensor images. 
+
+------------------
+## License and Citation
+This repository is released under the [MIT License](https://opensource.org/license/mit) - see the [LICENSE](LICENSE) file for details.
+
+If you use use this computational model in your research, please cite:
+
+Zhang, (2024) - Rapid modulation of striatal cholinergic interneurons and dopamine release by satellite astrocytes.  
+
+------------------
+## Acknowledgements
+This research was funded in part by Aligning Science Across Parkinson’s [ASAP-020370] through the Michael J. Fox Foundation for Parkinson’s Research (MJFF).
+
 
 **Key Features:**
 
