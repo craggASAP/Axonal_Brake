@@ -10,7 +10,7 @@
 
 ------------------
 ## Project Overview
-This repository contains MATLAB scripts that run a computational simulation of dopamine (DA) release in a neural circuit, considering the effects of cholinergic interneurons (Chl) inhibition and desensitization. This model is simplified and may not fully capture the complexities of the biological system. The parameters and functions ucan be adjusted to explore different scenarios and investigate the impact of various factors on dopamine release. These scripts were custom-written by Yan-Feng Zhang and used in the study ["An axonal brake on striatal dopamine output by cholinergic interneurons"](https://www.nature.com/articles/s41593-025-01906-5).
+This repository contains MATLAB scripts that run a computational simulation of dopamine (DA) release in a neural circuit, considering the effects of cholinergic interneurons (Chl) inhibition and desensitization. This model is simplified and may not fully capture the complexities of the biological system. The parameters and functions can be adjusted to explore different scenarios and investigate the impact of various factors on dopamine release. These scripts were custom-written by Yan-Feng Zhang and used in the study ["An axonal brake on striatal dopamine output by cholinergic interneurons"](https://www.nature.com/articles/s41593-025-01906-5).
 
 ------------------
 ## System Requirements
