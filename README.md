@@ -4,12 +4,13 @@
 ## Contents
 * [Project Overview](#project-overview)
 * [File Structure](#file-structure)
+* [Usage](#usage)
 * [License and citation](#license-and-citation)
 * [Acknowledgements](#acknowledgements)
 
 ------------------
 ## Project Overview
-This repository contains MATLAB scripts that run a computational simulation of dopamine (DA) release in a neural circuit, considering the effects of cholinergic interneurons (Chl) inhibition and desensitization. These scripts were custom-written by Yan-Feng Zhang and used in the study ["An axonal brake on striatal dopamine output by cholinergic interneurons"](https://www.biorxiv.org/content/10.1101/2024.05.15.594341v1).
+This repository contains MATLAB scripts that run a computational simulation of dopamine (DA) release in a neural circuit, considering the effects of cholinergic interneurons (Chl) inhibition and desensitization. This model is simplified and may not fully capture the complexities of the biological system. The parameters and functions ucan be adjusted to explore different scenarios and investigate the impact of various factors on dopamine release. These scripts were custom-written by Yan-Feng Zhang and used in the study ["An axonal brake on striatal dopamine output by cholinergic interneurons"](https://www.nature.com/articles/s41593-025-01906-5).
 
 ------------------
 ## System Requirements
@@ -28,26 +29,41 @@ MATLAB can be installed on machines running Windows, macOS or Linux. MATLAB soft
 ## File Structure
 The following files are included in this repository:
 
-**FCV**: Analysis of Fast-scan Cyclic Voltammetry (FCV) outputs.
-
-**Patch-Clamp**: Plot electrophysiology traces from patch-clamp experiments. 
-
-**Maths_Model**: All original MATLAB code used for mathemical predictions of geometrically expected mean minimum distances between ChIs or SPNs and their nearest astrocyte.
-
-      *Models ChI Inhibition:* Defines time-varying inhibition levels in the DLS and NAcc, and incorporates a dynamic inhibition profile with initial strong inhibition and subsequent gradual decline.
+**Models ChI Inhibition** 
+- Defines time-varying inhibition levels in the DLS and NAcc.
+- Incorporates a dynamic inhibition profile with initial strong inhibition and subsequent gradual decline.
     
-      *Simulates ChI and DA Firing Rates:* Defines baseline and phasic firing rates for ChI and DA neurons, and includes a simulated burst of ChI activity.
+**Simulates ChI and DA Firing Rates** 
+- Defines baseline and phasic firing rates for ChI and DA neurons.
+- Includes a simulated burst of ChI activity.
     
-      *Calculates Desensitization:* Models the desensitization of both DLS and NAcc to ChI inhibition over time.
+**Calculates Desensitization**
+- Models the desensitization of both DLS and NAcc to ChI inhibition over time.
     
-      *Determines Inhibition Efficiency:* Defines a function to map ChI firing rate to inhibition efficiency.
-    
-      *Calculates ChI-Dependent Depression:* Calculates the level of depression in both DLS and NAcc based on ChI inhibition and desensitization.
-    
-      *Calculates Effective Dopamine Firing:* Determines the effective dopamine firing rate in DLS and NAcc, accounting for inhibition and desensitization.
+**Determines Inhibition Efficiency** 
+- Defines a function to map ChI firing rate to inhibition efficiency.
 
-**GRAB_imaging**: Measure fluorescence changes in GRAB sensor images. 
+**Calculates ChI-Dependent Depression** 
+- Calculates the level of depression in both DLS and NAcc based on ChI inhibition and desensitization.
 
+**Calculates Effective Dopamine Firing** 
+- Determines the effective dopamine firing rate in DLS and NAcc, accounting for inhibition and desensitization.
+
+**These scripts provide a framework for understanding the interplay between ChI inhibition, desensitization, and dopamine release. It can be further expanded and refined to incorporate additional biological details and explore more complex scenarios.**
+
+------------------
+## Usage
+
+1. Run the script in MATLAB.
+2. The script will generate:
+    * Time-varying inhibition levels in DLS and NAcc.
+    * Simulated ChI and DA firing rates.
+    * Calculated desensitization scores.
+    * Calculated ChI-dependent depression scores.
+    * Calculated effective dopamine firing rates in DLS and NAcc.
+3. The script includes commented-out plotting commands for visualization. 
+    * Uncomment and modify these lines to plot the desired results.
+      
 ------------------
 ## License and Citation
 This repository is released under the [MIT License](https://opensource.org/license/mit) - see the [LICENSE](LICENSE) file for details.
@@ -59,42 +75,3 @@ Zhang, (2024) - Rapid modulation of striatal cholinergic interneurons and dopami
 ------------------
 ## Acknowledgements
 This research was funded in part by Aligning Science Across Parkinson’s [ASAP-020370] through the Michael J. Fox Foundation for Parkinson’s Research (MJFF).
-
-Text from Yan-Feng
-
-**Key Features:**
-
-* **Models ChI Inhibition:** 
-    * Defines time-varying inhibition levels in the DLS and NAcc.
-    * Incorporates a dynamic inhibition profile with initial strong inhibition and subsequent gradual decline.
-* **Simulates ChI and DA Firing Rates:** 
-    * Defines baseline and phasic firing rates for ChI and DA neurons.
-    * Includes a simulated burst of ChI activity.
-* **Calculates Desensitization:**
-    * Models the desensitization of both DLS and NAcc to ChI inhibition over time.
-* **Determines Inhibition Efficiency:**
-    * Defines a function to map ChI firing rate to inhibition efficiency.
-* **Calculates ChI-Dependent Depression:** 
-    * Calculates the level of depression in both DLS and NAcc based on ChI inhibition and desensitization.
-* **Calculates Effective Dopamine Firing:**
-    * Determines the effective dopamine firing rate in DLS and NAcc, accounting for inhibition and desensitization.
-
-**Usage:**
-
-1. Run the script in MATLAB.
-2. The script will generate:
-    * Time-varying inhibition levels in DLS and NAcc.
-    * Simulated ChI and DA firing rates.
-    * Calculated desensitization scores.
-    * Calculated ChI-dependent depression scores.
-    * Calculated effective dopamine firing rates in DLS and NAcc.
-3. The script includes commented-out plotting commands for visualization. 
-    * Uncomment and modify these lines to plot the desired results.
-
-**Note:**
-
-* This is a simplified model and may not fully capture the complexities of the biological system.
-* The parameters and functions used in the script can be adjusted to explore different scenarios and investigate the impact of various factors on dopamine release.
-
-This script provides a framework for understanding the interplay between ChI inhibition, desensitization, and dopamine release. It can be further expanded and refined to incorporate additional biological details and explore more complex scenarios.
-
