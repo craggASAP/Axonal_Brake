@@ -3,7 +3,7 @@
 ------------------
 ## Contents
 * [Project Overview](#project-overview)
-* [Folder Structure](#folder-structure)
+* [File Structure](#file-structure)
 * [License and citation](#license-and-citation)
 * [Acknowledgements](#acknowledgements)
 
@@ -25,7 +25,7 @@ The computational power needed to run the MATLAB script should be well within th
 MATLAB can be installed on machines running Windows, macOS or Linux. MATLAB software requires a paid subscription to be used. More details [here](https://uk.mathworks.com/products/matlab.html).
 
 ------------------
-## Files
+## File Structure
 The following files are included in this repository:
 
 **FCV**: Analysis of Fast-scan Cyclic Voltammetry (FCV) outputs.
@@ -33,6 +33,18 @@ The following files are included in this repository:
 **Patch-Clamp**: Plot electrophysiology traces from patch-clamp experiments. 
 
 **Maths_Model**: All original MATLAB code used for mathemical predictions of geometrically expected mean minimum distances between ChIs or SPNs and their nearest astrocyte.
+
+      *Models ChI Inhibition:* Defines time-varying inhibition levels in the DLS and NAcc, and incorporates a dynamic inhibition profile with initial strong inhibition and subsequent gradual decline.
+    
+      *Simulates ChI and DA Firing Rates:* Defines baseline and phasic firing rates for ChI and DA neurons, and includes a simulated burst of ChI activity.
+    
+      *Calculates Desensitization:* Models the desensitization of both DLS and NAcc to ChI inhibition over time.
+    
+      *Determines Inhibition Efficiency:* Defines a function to map ChI firing rate to inhibition efficiency.
+    
+      *Calculates ChI-Dependent Depression:* Calculates the level of depression in both DLS and NAcc based on ChI inhibition and desensitization.
+    
+      *Calculates Effective Dopamine Firing:* Determines the effective dopamine firing rate in DLS and NAcc, accounting for inhibition and desensitization.
 
 **GRAB_imaging**: Measure fluorescence changes in GRAB sensor images. 
 
@@ -86,16 +98,3 @@ Text from Yan-Feng
 
 This script provides a framework for understanding the interplay between ChI inhibition, desensitization, and dopamine release. It can be further expanded and refined to incorporate additional biological details and explore more complex scenarios.
 
-.m Files
-
-Type: Script or function files.
-Usage: Contain MATLAB code, which can include functions, scripts, or class definitions.
-Execution: Can be run directly in the MATLAB environment. When executed, the code within the file is interpreted and run line by line.
-Example: A file named myFunction.m might contain a function definition that performs calculations or manipulates data.
-
-.mat Files
-
-Type: Data files.
-Usage: Used to store variables, arrays, and other data structures in a binary format. They allow for efficient saving and loading of MATLAB workspace variables.
-Execution: Cannot be executed as code; instead, they are loaded into the MATLAB workspace using the load function.
-Example: A file named data.mat might store variables such as matrices or structures that can be loaded into a session for further analysis.
